@@ -14,3 +14,7 @@
 .authentication-btn {
   @apply flex flex-row relative justify-center items-center py-3 px-6 outline h-[35px] w-[250px] bg-orange-500;
 }
+
+.registration__input {
+  @apply justify-items-start pt-5;
+}
