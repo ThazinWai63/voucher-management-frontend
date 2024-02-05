@@ -1,6 +1,17 @@
-import React from 'react'
+"use client";
+import { Listbox, Transition } from '@headlessui/react'
+import React, { Fragment, useState } from 'react'
+import CustomListBox from '../CustomListBox';
 
 const Registration = () => {
+
+    const userTypes = [
+        { id: 0, type: 'Choose user type' },
+        { id: 1, type: 'Customer' },
+        { id: 2, type: 'Merchant' }
+    ]
+
+    const [selectedUserType, setSelectedUserType] = useState(userTypes[0])
     return (
         <main>
             <div className="mt-20">
@@ -25,6 +36,10 @@ const Registration = () => {
                         <text>Confirm Password</text>
                     </div>
                     <input type="password" className="logintext__input" />
+                    <div className='registration__input pb-1'>
+                        <text>Register as</text>
+                    </div>
+                   <CustomListBox></CustomListBox>
                     <button type="button" className="authentication-btn mt-10">Sign Up</button>
                 </form>
             </div>
