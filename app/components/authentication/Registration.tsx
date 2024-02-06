@@ -1,7 +1,7 @@
 "use client";
 import { Listbox, Transition } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
-import CustomListBox from '../CustomListBox';
+import CustomListBox from '../common/CustomListBox';
 import { isValidateEmail } from '@/utils';
 
 const Registration = () => {
