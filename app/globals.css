@@ -11,7 +11,7 @@
   @apply flex flex-col items-center justify-center;
 }
 
-.authentication-btn {
+.authentication__btn {
   @apply flex flex-row relative justify-center items-center py-3 px-6 outline h-[35px] w-[250px] bg-orange-500;
 }
 

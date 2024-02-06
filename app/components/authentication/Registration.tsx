@@ -75,7 +75,7 @@ const Registration = () => {
                         <text>Register as</text>
                     </div>
                     <CustomListBox></CustomListBox>
-                    <button type="button" className="authentication-btn mt-10" onClick={signUp}>Sign Up</button>
+                    <button type="button" className="authentication__btn mt-10" onClick={signUp}>Sign Up</button>
                 </form>
             </div>
         </main>

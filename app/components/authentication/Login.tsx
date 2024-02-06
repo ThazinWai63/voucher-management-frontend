@@ -33,7 +33,7 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)} />
           <input type="password" placeholder="Please enter password" className="logintext__input mt-10"
             onChange={(e) => setPassword(e.target.value)} />
-          <button type="button" className="authentication-btn mt-10" onClick={logIn}>Login</button>
+          <button type="button" className="authentication__btn mt-10" onClick={logIn}>Login</button>
         </form>
       </div >
     </main >
