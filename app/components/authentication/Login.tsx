@@ -1,24 +1,18 @@
 "use client";
+import { isValidateEmail } from '@/utils';
 import React, { useState } from 'react'
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isValidEmail, setValidEmail] = useState(false);
 
   const logIn = () => {
-    validateEmail()
+    const isValidEmail = isValidateEmail(email);
     if (password.length > 0 && isValidEmail) {
 
     } else {
 
     }
-  }
-
-  const validateEmail = () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const isValid = emailRegex.test(email);
-    setValidEmail(isValid);
   }
 
   return (
